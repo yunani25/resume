@@ -3,80 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <meta name="keywords" content="html">
     <meta name="description" content="это курс">
     <title>course</title>
 </head>
 <body>
-    <img src="photo.jpg" alt="моё фото" width="300">
-    <h1>Анастасия</h1>
-    <h2>Меня зовут Анастасия. 
-        <br>По призванию кинолог, <strong> по нужде</strong> изучаю <em>программирование.</em></h2>
-    <h3>Список соц сетей</h3>
-    <ul>
-        <li><a href="https://vk.com" target="_blank">Вк</a></li>
-        <br>
-        <li><a href="https://insta.com" target="_blank">Инст</a></li>
-    </ul>
+    <div class="container">
+        <div class="header">
+        <div class="info">
+            <img class="photo" src="photo.jpg" alt="моё фото">
+                <div class="info-text"><h1>Анастасия</h1>
+                    <p>Меня зовут Анастасия. 
+                    <br>
+                    По призванию кинолог, <strong> по нужде</strong> изучаю <em>программирование.</em></p>
+                    <div class="card bg-beige">
+                        <h2 class="">Список соц сетей</h2><!-- btn -->
+                            <ul class="list">
+                                <li><a href="https://vk.com" target="_blank">Вк</a></li>
+                                <br>
+                                <li><a href="https://insta.com" target="_blank">Инст</a></li>
+                            </ul>
+                    </div>
+            </div>
+        </div>
+        </div>
 
-    <h3>Мои хобби</h3>
-    <ul>
-        <li>Японский</li>
-        <li>Восточные танцы</li>
-        <li>Онеме</li>
-    </ul>
+        <div class="card bg-beige">
+            <h2 class="btn">Мои хобби</h2>
+                <ul>
+                    <li>Японский</li>
+                    <li>Восточные танцы</li>
+                    <li>Онеме</li>
+                </ul>
+        </div>
 
-    <h3>Опыт работы</h3>
+        <div class="card bg-beige">
+            <h2 class="work btn">Опыт работы</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Период</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>детский сад</td>
-                <td>няня</td>
-                <td>2017-2018</td>
-            </tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Период</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>детский сад</td>
+                        <td>няня</td>
+                        <td>2017-2018</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Эко польза</td>
+                        <td>продавец</td>
+                        <td>2021-2022</td>
+                    </tr>
+
+                    <tr>
+                        <td>ЗАЯ Д.А.Доценко </td>
+                        <td>содержанка</td>
+                        <td>2014-бесконечно</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contact">
             
-            <tr>
-                <td>Эко польза</td>
-                <td>продавец</td>
-                <td>2021-2022</td>
-            </tr>
+            <form action="" class="form"> 
+            <h3>Связаться со мной</h3>
 
-            <tr>
-                <td>ЗАЯ Д.А.До </td>
-                <td>содержанка</td>
-                <td>2014-бесконечно</td>
-            </tr>
-        </tbody>
-    </table>
-    <h3>Связаться со мной</h3>
-    <form action=""> 
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="mame" placeholder="введите имя">
+            <div class="form-row">
+            
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="mame" placeholder="введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ваш email:</label>
+                    <input type="email" id="email" placeholder="введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea name="" id="message" cols="35" rows="10" placeholder="введите сообщение..."></textarea>
+            </div>
+        
+            
+            <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
     </div>
-
-    <div>
-        <label for="email">ваш email:</label>
-        <input type="email" id="email" placeholder="введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="message" cols="35" rows="10" placeholder="введите сообщение..."></textarea>
-    </div>
-    
-    <br>
-
-    <button type="submit">отправить</button>
-    </form>
 </body>
 </html>
