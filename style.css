@@ -6,7 +6,6 @@ body {
 
     color: #100331;
     background-color: rgb(241, 241, 217);
-    /* font: normal 16px 'Montserrat', sans-serif; */
 }
 
 
@@ -94,16 +93,26 @@ a:hover{
 }
 
 
-.btn{
+.btn, .back{
     background: #070500;
     color: #c2bb8c;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     font-family: inherit;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     text-align: center;
+
+}
+
+.btn-ar{
+    display: flex;;
+justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    width: 350px;
 }
 
 .btn:hover{
@@ -138,7 +147,6 @@ a:hover{
     display: inline-block;
     margin-right: 20px;
     width: 50%;
-    /* width: calc(50% - 20px); */
     
 }
 
